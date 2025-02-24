@@ -61,7 +61,7 @@ export const contracts = [
     contractAddress: '0x1234567890abcdef1234567890abcdef1234546678',
     totalSupply: 1000,
     vestedAmount: 600,
-    status: 'Locked',
+    status: 'Empty',
     target: 5,
     unit: 'USD',
     image:

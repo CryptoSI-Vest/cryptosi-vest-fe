@@ -70,10 +70,10 @@ const PriceChart = () => {
   };
   return (
     <div
-      className='w-full flex flex-col border-8 border-[#82889833] rounded-md'
+      className='w-full flex flex-col border-8 border-secondary dark:border-[#82889833] rounded-md'
       id='candlestick-chart'
     >
-      <div className='flex items-center bg-[#82889833] text-white p-2 pt-0'>
+      <div className='flex items-center bg-secondary dark:bg-[#82889833] text-white p-2 pt-0'>
         <span className='text-xl font-bold flex-grow'>ETH/USD</span>
         <div className='flex p-1.5 bg-[#82889880] rounded-md'>
           {filters.map((option) => (

@@ -87,7 +87,7 @@ const Dashboard = () => {
                 {contracts.map((contract, index) => (
                   <tr key={index}>
                     <td className='text-center py-2 px-2 bg-white'>
-                      <div className='flex w-full items-center justify-center gap-1'>
+                      <div className='flex w-full items-center justify-center gap-1 whitespace-nowrap'>
                         <img
                           src={contract.image}
                           alt={contract.name}
