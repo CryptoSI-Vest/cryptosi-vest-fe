@@ -1,0 +1,52 @@
+{
+  "name": "cryptosi-vest-fe",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/styled": "^11.14.0",
+    "@headlessui/react": "^2.2.0",
+    "@mui/icons-material": "^6.4.5",
+    "@rainbow-me/rainbowkit": "^2.2.4",
+    "@tailwindcss/forms": "^0.3.2",
+    "@tanstack/query-core": "^5.66.4",
+    "@wagmi/core": "^2.16.4",
+    "axios": "^1.7.9",
+    "ethers": "^5.7.2",
+    "lucide-react": "^0.475.0",
+    "react": "^18.3.1",
+    "react-candlestick-chart": "^1.0.15",
+    "react-dom": "^18.3.1",
+    "react-ga4": "^2.1.0",
+    "react-helmet": "^6.1.0",
+    "react-router": "^6.29.0",
+    "react-router-dom": "^6.29.0",
+    "wagmi": "^2.14.11",
+    "xtend": "^4.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "browserslist": "^4.24.4",
+    "d3": "^7.9.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

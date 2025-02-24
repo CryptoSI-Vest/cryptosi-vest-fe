@@ -1,0 +1,164 @@
+/* Global transition for the background and text color */
+html {
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+body {
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.app-body {
+  background: #f5f5f5;
+}
+
+.dark .app-body {
+  background: radial-gradient(
+      80.56% 82.63% at 48.85% 38.54%,
+      #000000 0%,
+      #252a34 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.non-movable {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* For WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eaeaea80;
+  width: 15px;
+  border-radius: 15px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6f9bfc;
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #0b56fa;
+}
+
+.iekbcc0::-webkit-scrollbar {
+  width: 8px;
+}
+.iekbcc0::-webkit-scrollbar-track {
+  background: #eaeaea80;
+}
+.iekbcc0::-webkit-scrollbar-thumb {
+  background-color: #6f9bfc;
+  border-radius: 15px;
+}
+
+/* .iekbcc0 .ju367v9i {
+  background-color: red!impro;
+} */
+
+.success-modal {
+  background: linear-gradient(176.84deg, #ffffff 63.98%, #6f9bfc 129.96%);
+}
+
+.dark .success-modal {
+  background: #252a34;
+}
+
+.contract-card {
+  background: linear-gradient(180deg, #ffffff 0%, #252a34 100%);
+  box-shadow: 0px 0px 14px 0px #00000033;
+}
+
+.dark .contract-card {
+  background: linear-gradient(180deg, #6f9bfc 0%, #0b56fa 100%);
+}
+
+.square {
+  /* Create a circular hole that covers the entire square */
+  -webkit-mask-image: radial-gradient(
+    circle 10px at center,
+    transparent 20px,
+    black 11px
+  );
+  mask-image: radial-gradient(
+    circle 10px at top left,
+    transparent 20px,
+    black 11px
+  );
+}
+
+@keyframes flow {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.animate-flow {
+  animation: flow 3s infinite linear;
+}
+
+.quick-action {
+  box-shadow: 0px 0px 14px 0px #00000063;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.96) 54.45%,
+    rgba(111, 155, 252, 0.96) 118.84%
+  );
+}
+
+.dark .quick-action {
+  background: linear-gradient(
+    180deg,
+    rgba(61, 121, 251, 0.96) -9.48%,
+    rgba(17, 20, 24, 0.96) 86.32%
+  );
+}
+
+.text-border {
+  -webkit-text-stroke: 1px black; /* Border width and color */
+}
