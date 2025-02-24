@@ -4,7 +4,7 @@ export const ContractCard = ({ contract }) => {
   const navigate = useNavigate();
   return (
     <div className='flex rounded-2xl pl-3 contract-card tracking-wide'>
-      <div className='w-full rounded-l-2xl rounded-r-2xl flex flex-col py-5 px-4 md:px-12 dark:bg-secondary bg-white dark:text-[#CACACB] min-w-40 sm:min-w-80 items-center gap-1'>
+      <div className='w-full rounded-l-2xl rounded-r-2xl flex flex-col py-5 px-4 md:px-8 dark:bg-secondary bg-white dark:text-[#CACACB] min-w-40 sm:min-w-60 items-center gap-1'>
         {contract.image ? (
           <img
             className='w-20 aspect-square flex justify-center items-center rounded-full object-cover object-center'
