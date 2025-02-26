@@ -8,7 +8,6 @@ const vestingTypes = [
   'Hybrid Vesting',
 ];
 const statuses = ['Active', 'Pending', 'Completed'];
-const devType = ['Developer', 'Non-Developer'];
 const Explorer = () => {
   const handleVestingType = (type) => {};
   const handleVestingStatus = (status) => {};
@@ -40,10 +39,10 @@ const Explorer = () => {
             onChange={handleVestingStatus}
             title='Filter by Status'
           />
-          <Dropdown
-            options={devType}
-            onChange={handlerDevType}
-            title='Filter by Dev Wallet'
+          <input
+            type='text'
+            placeholder='Search by dev wallet address'
+            className='px-4 py-2 rounded-md border border-gray-300 dark:border-secondary text-black dark:text-white bg-[#F2F2F2] dark:bg-secondary w-full'
           />
         </div>
         <div className='border-t dark:border-[#6F9BFC] border-[#252A3480] flex flex-wrap justify-center items-start gap-12 py-8 overflow-y-auto flex-grow px-2'>
